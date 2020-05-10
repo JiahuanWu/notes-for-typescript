@@ -44,3 +44,12 @@ var Color;
 - By default null and undefined are subtypes of all other types. Can assign null and undefined to something like `number`.
 - When using the `--strictNullChecks` flag. `null` is assignable to `null` and `any`. `undefinde` is assignable to `undefined`, `any`, and `void`.
 - The  `never` type is a subtype of, and assignable to, every type; however, no type is a subtype of, or assignable to, `never`.
+
+### Type Assertions
+```javascript
+let someValue: any = 'This is a string';
+// <typeName>variableName
+<string>someValue
+// variableName as typeName
+someValue as string
+```
